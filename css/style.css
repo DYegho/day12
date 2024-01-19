@@ -1,0 +1,128 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    /* Colores primarios */
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --darkgrayishBlue: hsl(227, 10%, 46%);
+    
+    /* Colores neutrales */
+    --darkGray: hsl(0, 0%, 59%);
+    --Kumbh-family: 'Kumbh Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--darkCyan);
+    background-image: url(../img/bg-pattern-top.svg), url(../img/bg-pattern-bottom.svg);
+    background-repeat: no-repeat , no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+    font-family: var(--Kumbh-family);
+    font-size: 18px;
+}
+
+.container-card{
+    margin: 170px auto 50px;
+    width: 330px;
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container-card:hover{
+    cursor: pointer;
+    box-shadow:  10px 10px 5px  var(--veryDarkDesaturatedBlue);
+    transition: 300ms;
+
+}
+
+.head-bubbles{
+    background-image: url(../img/bg-pattern-card.svg);
+    height: 140px;
+}
+
+.image-person{
+    position: absolute;
+    top: 87px;
+    left: 35%;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 96px;
+}
+
+.data-person{
+    background-color: white;
+    height: 150px;
+    padding: 75px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.name-person{
+    font-weight: 700;
+    color: var(--veryDarkDesaturatedBlue);
+}
+
+.name-person:hover{
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.age-person, .location{
+    color: var(--darkGray);
+}
+
+.location{
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.container-stats{
+    background-color: white;
+    border-top: 1px solid var(--darkGray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+
+.statistics{
+    text-align: center;
+}
+.amount{
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--veryDarkDesaturatedBlue);
+}
+
+.followers{
+    font-size: 0.6em;
+    color: var(--darkGray);
+    letter-spacing: 2px;
+}
+
+.atribution{
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Desktop */
+@media screen and(min-width:1440px){
+    .container-card{
+      width: 360px;
+
+    }
+}
+
+
+
+
+
